@@ -1,0 +1,141 @@
+.carrossel {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.carrossel__titulo {
+    font-family: var(--fonte);
+   color: var(--laranja);
+   background-color: var(--branco); 
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 1.125rem;
+   font-weight: 700;
+   padding: 20px 0 8px 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 12px 0 16px 0;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius:10px;
+    margin: 25px 24px 15px 24px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+    padding: 5%;
+    font-family: var(--fonte);
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 1.175rem;
+    margin: 0.5rem 0;
+}
+
+.descricao__texto {
+    font-size: 0.875rem;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+
+}
+
+.botoes__item {
+    margin: 0 0.5rem;
+}
+
+.botoes__ancora {
+    background-color: var(--laranja);
+    padding: 0.75rem 1rem ;
+    width: 129px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 1.625em;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        gap: 46px;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    
+    .card {
+        width: 60%;
+        
+    }
+    
+    .descricao__titulo {
+        font-size: 2em;
+    }
+
+    .descricao__texto {
+        font-size: 1em;
+        width: 20em;
+    }
+    
+}
+
+
+
